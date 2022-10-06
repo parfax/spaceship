@@ -1,4 +1,4 @@
-Shader "Post Processing/Custom Motion Vector Texture"
+Shader "PostProcessing/Custom Motion Vector Texture"
 {
     Properties
     {

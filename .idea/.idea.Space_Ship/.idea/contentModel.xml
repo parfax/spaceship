@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\AdminPC\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\AdminPC\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Space_Ship.1112501966.00" t="ExcludeRecursive" />
-    <e p="F:\Space_Ship" t="IncludeRecursive">
+    <e p="C:\Users\AdminPC\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Space_Ship.-641850030.00" t="ExcludeRecursive" />
+    <e p="E:\Old disk\Local disk H\Development\Space_Ship" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Game" t="Include">
-          <e p="DarkPage Intro" t="Include">
-            <e p="LetsStartMayBe.cs" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
+          <e p="_Scripts" t="Include">
             <e p="AmmoCase.cs" t="Include" />
             <e p="boss.cs" t="Include" />
             <e p="cam.cs" t="Include" />
@@ -21,15 +18,12 @@
             <e p="EditMenu.cs" t="Include" />
             <e p="enemy.cs" t="Include" />
             <e p="fire.cs" t="Include" />
-            <e p="GameMenu.cs" t="Include" />
             <e p="gameOver.cs" t="Include" />
             <e p="goMain.cs" t="Include" />
             <e p="goSkin.cs" t="Include" />
-            <e p="hudChange.cs" t="Include" />
             <e p="letsBack.cs" t="Include" />
             <e p="letsBackToShop.cs" t="Include" />
-            <e p="LoadSys.cs" t="Include" />
-            <e p="mainscale.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
             <e p="medkit.cs" t="Include" />
             <e p="Money.cs" t="Include" />
             <e p="movementt.cs" t="Include" />
@@ -37,6 +31,7 @@
             <e p="mvmntPursuit.cs" t="Include" />
             <e p="pause.cs" t="Include" />
             <e p="PlayerFire.cs" t="Include" />
+            <e p="PreservationSystem.cs" t="Include" />
             <e p="record.cs" t="Include" />
             <e p="retry.cs" t="Include" />
             <e p="rockett.cs" t="Include" />
@@ -55,83 +50,11 @@
             <e p="TimeToFalse.cs" t="Include" />
             <e p="Trunk.cs" t="Include" />
           </e>
+          <e p="DarkPage Intro" t="Include">
+            <e p="LetsStartMayBe.cs" t="Include" />
+          </e>
           <e p="Shaders" t="Include">
             <e p="BLUR.shader" t="Include" />
-          </e>
-        </e>
-        <e p="GoogleMobileAds" t="Include">
-          <e p="Api" t="Include">
-            <e p="AdapterStatus.cs" t="Include" />
-            <e p="AdErrorEventArgs.cs" t="Include" />
-            <e p="AdFailedToLoadEventArgs.cs" t="Include" />
-            <e p="AdLoader.cs" t="Include" />
-            <e p="AdPosition.cs" t="Include" />
-            <e p="AdRequest.cs" t="Include" />
-            <e p="AdSize.cs" t="Include" />
-            <e p="BannerView.cs" t="Include" />
-            <e p="CustomNativeEventArgs.cs" t="Include" />
-            <e p="CustomNativeTemplateAd.cs" t="Include" />
-            <e p="Gender.cs" t="Include" />
-            <e p="InitializationStatus.cs" t="Include" />
-            <e p="InterstitialAd.cs" t="Include" />
-            <e p="Mediation" t="Include">
-              <e p="MediationExtras.cs" t="Include" />
-            </e>
-            <e p="MobileAds.cs" t="Include" />
-            <e p="Reward.cs" t="Include" />
-            <e p="RewardBasedVideoAd.cs" t="Include" />
-            <e p="RewardedAd.cs" t="Include" />
-            <e p="ServerSideVerificationOptions.cs" t="Include" />
-          </e>
-          <e p="Common" t="Include">
-            <e p="DummyClient.cs" t="Include" />
-            <e p="IAdLoaderClient.cs" t="Include" />
-            <e p="IBannerClient.cs" t="Include" />
-            <e p="ICustomNativeTemplateClient.cs" t="Include" />
-            <e p="IInitializationStatusClient.cs" t="Include" />
-            <e p="IInterstitialClient.cs" t="Include" />
-            <e p="IMobileAdsClient.cs" t="Include" />
-            <e p="IRewardBasedVideoAdClient.cs" t="Include" />
-            <e p="IRewardedAdClient.cs" t="Include" />
-            <e p="MobileAdsEventExecutor.cs" t="Include" />
-            <e p="RewardedAdDummyClient.cs" t="Include" />
-            <e p="Utils.cs" t="Include" />
-          </e>
-          <e p="Editor" t="Include">
-            <e p="AndroidBuildPostProcessor.cs" t="Include" />
-            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
-            <e p="GoogleMobileAdsSettings.cs" t="Include" />
-            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
-            <e p="ManifestProcessor.cs" t="Include" />
-            <e p="PListProcessor.cs" t="Include" />
-          </e>
-          <e p="Platforms" t="Include">
-            <e p="Android" t="Include">
-              <e p="AdLoaderClient.cs" t="Include" />
-              <e p="BannerClient.cs" t="Include" />
-              <e p="CustomNativeTemplateClient.cs" t="Include" />
-              <e p="DisplayMetrics.cs" t="Include" />
-              <e p="InitializationStatusClient.cs" t="Include" />
-              <e p="InterstitialClient.cs" t="Include" />
-              <e p="MobileAdsClient.cs" t="Include" />
-              <e p="RewardBasedVideoAdClient.cs" t="Include" />
-              <e p="RewardedAdClient.cs" t="Include" />
-              <e p="Utils.cs" t="Include" />
-            </e>
-            <e p="GoogleMobileAdsClientFactory.cs" t="Include" />
-            <e p="iOS" t="Include">
-              <e p="AdLoaderClient.cs" t="Include" />
-              <e p="BannerClient.cs" t="Include" />
-              <e p="CustomNativeTemplateClient.cs" t="Include" />
-              <e p="Externs.cs" t="Include" />
-              <e p="InitializationStatusClient.cs" t="Include" />
-              <e p="InterstitialClient.cs" t="Include" />
-              <e p="MobileAdsClient.cs" t="Include" />
-              <e p="MonoPInvokeCallbackAttribute.cs" t="Include" />
-              <e p="RewardBasedVideoAdClient.cs" t="Include" />
-              <e p="RewardedAdClient.cs" t="Include" />
-              <e p="Utils.cs" t="Include" />
-            </e>
           </e>
         </e>
         <e p="Other" t="Include">
@@ -175,11 +98,6 @@
               <e p="Editor" t="Include">
                 <e p="CFXEasyEditor.cs" t="Include" />
               </e>
-            </e>
-          </e>
-          <e p="PlayServicesResolver" t="Include">
-            <e p="Editor" t="Include">
-              <e p="play-services-resolver_v1.2.135.0.txt" t="Include" />
             </e>
           </e>
           <e p="PostProcessing" t="Include">
@@ -344,15 +262,6 @@
             </e>
           </e>
           <e p="Standard Assets" t="Include">
-            <e p="2D" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Camera2DFollow.cs" t="Include" />
-                <e p="CameraFollow.cs" t="Include" />
-                <e p="Platformer2DUserControl.cs" t="Include" />
-                <e p="PlatformerCharacter2D.cs" t="Include" />
-                <e p="Restarter.cs" t="Include" />
-              </e>
-            </e>
             <e p="CrossPlatformInput" t="Include">
               <e p="CrossPlatformInputGuidelines.txt" t="Include" />
               <e p="Scripts" t="Include">

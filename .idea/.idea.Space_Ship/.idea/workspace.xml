@@ -1,15 +1,583 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa022fc5-130b-4b45-9021-05a40f6a763d" name="Default Changelist" comment="" />
+    <list default="true" id="aa022fc5-130b-4b45-9021-05a40f6a763d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space_Ship/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Anims/Button.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Anims/Button.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Anims/none.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Anims/none.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/GamePrefabs/fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/GamePrefabs/fire.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/GamePrefabs/spaceSHip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/GamePrefabs/spaceSHip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Main.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Main.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Pursuit.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Pursuit.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/AmmoCase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/AmmoCase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EditMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EditMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/GameMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/GameMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/LoadSys.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/LoadSys.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Money.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Money.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerFire.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/PlayerFire.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SaveSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SaveSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkinSelectorAndSeller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkinSelectorAndSeller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkyTanker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkyTanker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkyTankerPursuit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SkyTankerPursuit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SpawnMngr.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/SpawnMngr.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/StoreShop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/StoreShop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/TimeToDestroy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/TimeToDestroy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/TimeToFalse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/TimeToFalse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Trunk.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Trunk.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/boss.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/boss.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/cam.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/cam.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/controlChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/controlChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/destroyBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/destroyBox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/editButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/editButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/fire.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/fire.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/gameOver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/gameOver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/goMain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/goMain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/goSkin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/goSkin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/hudChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/hudChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/letsBack.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/letsBack.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/letsBackToShop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/letsBackToShop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/mainscale.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/mainscale.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/medkit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/medkit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/movementt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/movementt.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/movementtRight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/movementtRight.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/mvmntPursuit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/mvmntPursuit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/pause.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/pause.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/record.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/record.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/retry.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/retry.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/rockett.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/rockett.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/settingss.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/settingss.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/skinUp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/skinUp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/stoneHP.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/stoneHP.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/swipeControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/swipeControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/timeToDeactiveAudio.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/timeToDeactiveAudio.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_electro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_electro.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_forest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_forest.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_ghosts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_ghosts.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_graffiti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_graffiti.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_retro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_retro.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_san_francisco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_san_francisco.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_sky.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_swamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_swamp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2431_violet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2dspace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/2dspace.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/5623.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/5623.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/Stones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/Stones.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/bgGradient.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/bgGradient.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/border.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/boss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/boss.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/boss2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/boss2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/burst.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/burst.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/cancel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/case2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/doubleGun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/doubleGun.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/fire1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/fire1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/images.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/play 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/play 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/screen1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/screen1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/settingsbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/settingsbg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/shop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/shop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/spaceSHip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/spaceSHip.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/updates.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/updates.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/verification-checkmark-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/verification-checkmark-symbol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/imgs/white.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdErrorEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdErrorEventArgs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdPosition.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdRequest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdRequest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdSize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdSize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdapterStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/AdapterStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/BannerView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/BannerView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Gender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Gender.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/InitializationStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/InitializationStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/InterstitialAd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/InterstitialAd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Mediation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/MobileAds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/MobileAds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Reward.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Reward.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/RewardedAd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/RewardedAd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/ServerSideVerificationOptions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Api/ServerSideVerificationOptions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/DummyClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/DummyClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IBannerClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IBannerClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IInitializationStatusClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IInitializationStatusClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IInterstitialClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IInterstitialClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IRewardedAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/IRewardedAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/RewardedAdDummyClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/RewardedAdDummyClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Common/Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/AndroidBuildPostProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/AndroidBuildPostProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettingsEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/GoogleMobileAdsSettingsEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/ManifestProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Editor/PListProcessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/DisplayMetrics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/DisplayMetrics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/InitializationStatusClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/InitializationStatusClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/RewardedAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/RewardedAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/Android/Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/InitializationStatusClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/InitializationStatusClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/RewardedAdClient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/RewardedAdClient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Landscape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Landscape.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/LandscapeMon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/LandscapeMon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Portrait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Portrait.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/PortraitMon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/PortraitMon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Purchase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Editor/Resources/Purchase.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.135.0.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.JarResolver_v1.2.135.0.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.VersionHandler.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.VersionHandler.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.135.0.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PlayServicesResolver/Editor/play-services-resolver_v1.2.135.0.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Other/PostProcessing/Utilities/CustomMotionTexture/Shaders/CustomMotionVectorTexture.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyCrouch.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyCrouch.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyCrouchingWalk.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyCrouchingWalk.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyFalling.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyFalling.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyIdle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyIdle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump01.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump01.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump02.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump02.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump03.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump03.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump04.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump04.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump05.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump05.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump06.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump06.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump07.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump07.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump08.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump08.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump09.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump09.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump10.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump10.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump11.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyJump11.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyRun.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyRun.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyWalk.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animations/RobotBoyWalk.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animator/2dCharacterAnimator.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Animator/2dCharacterAnimator.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Materials/SpriteLit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Materials/SpriteLit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/BouncyBox.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/BouncyBox.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/Slippery.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/Slippery.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/Sticky.physicsMaterial2D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/PhysicsMaterials/Sticky.physicsMaterial2D.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CharacterRobotBoy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CharacterRobotBoy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CollisionSlider.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CollisionSlider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CratePink.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/CratePink.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/ExtentsLeft.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/ExtentsLeft.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/ExtentsRight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/ExtentsRight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Killzone.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Killzone.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform04x01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform04x01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform08x01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform08x01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform12x01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform12x01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform16x01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform16x01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform36x01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/Platform36x01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/PlatformRamp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Prefabs/PlatformRamp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Camera2DFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Camera2DFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/CameraFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/CameraFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Platformer2DUserControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Platformer2DUserControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Restarter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Scripts/Restarter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/BackgroundGreyGridSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/BackgroundGreyGridSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/BackgroundNavyGridSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/CratePinkGridSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/CratePinkGridSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/PlatformWhiteSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/PlatformWhiteSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyCrouchSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyDeathSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyIdleSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyJumpSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyRollSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyRollSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyRunSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyRunSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/Standard Assets/2D/Sprites/RobotBoyWalkSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.annotation.annotation-1.0.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-common-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-common-2.0.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-runtime-2.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.arch.core.core-runtime-2.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.asynclayoutinflater.asynclayoutinflater-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.browser.browser-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.collection.collection-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.collection.collection-1.0.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.coordinatorlayout.coordinatorlayout-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.core.core-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.core.core-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.cursoradapter.cursoradapter-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.cursoradapter.cursoradapter-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.customview.customview-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.customview.customview-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.documentfile.documentfile-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.documentfile.documentfile-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.drawerlayout.drawerlayout-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.drawerlayout.drawerlayout-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.fragment.fragment-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.fragment.fragment-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.interpolator.interpolator-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.interpolator.interpolator-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-ui-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-ui-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-utils-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.legacy.legacy-support-core-utils-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-common-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-common-2.0.0.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-2.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-2.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-livedata-core-2.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-runtime-2.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-runtime-2.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.lifecycle.lifecycle-viewmodel-2.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.loader.loader-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.loader.loader-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.localbroadcastmanager.localbroadcastmanager-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.print.print-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.print.print-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.slidingpanelayout.slidingpanelayout-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.swiperefreshlayout.swiperefreshlayout-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-18.3.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-18.3.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-18.3.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-18.3.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-18.3.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-18.3.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-17.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-basement-17.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-gass-18.3.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-gass-18.3.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.1.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-base-17.1.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.1.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-measurement-sdk-api-17.1.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.0.0.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-tasks-17.0.0.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdLoader.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdLoader.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdLoader.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdLoader.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUBanner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUBanner.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUBanner.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUBanner.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterface.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterface.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterstitial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterstitial.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterstitial.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUInterstitial.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUObjectCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUObjectCache.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUObjectCache.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUObjectCache.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUPluginUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUPluginUtil.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUPluginUtil.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUPluginUtil.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURequest.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURequest.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURequest.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURequest.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardBasedVideoAd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardBasedVideoAd.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardBasedVideoAd.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardBasedVideoAd.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardedAd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardedAd.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardedAd.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADURewardedAd.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/iOS/GADUTypes.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Game/Scripts/LoadSys.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/record.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/SpawnMngr.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/SkyTanker.cs" />
@@ -22,9 +590,19 @@
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/Trunk.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/SkinSelectorAndSeller.cs" />
       <option value="$PROJECT_DIR$/Assets/Game/Scripts/settingss.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/GameMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/LoadSys.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/Preservation System.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/Preservation_System.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/swipeControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/Scripts/PreservationSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/_Scripts/gameOver.cs" />
+      <option value="$PROJECT_DIR$/Assets/Game/_Scripts/pause.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1y2oXS9trM5ItFbLSN3odnkID6E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,6 +649,12 @@
       <updated>1631459094867</updated>
       <workItem from="1631459103316" duration="1269000" />
       <workItem from="1631461149855" duration="9709000" />
+      <workItem from="1642170590437" duration="707000" />
+      <workItem from="1642184953564" duration="7271000" />
+      <workItem from="1653822196278" duration="6047000" />
+      <workItem from="1665052146184" duration="148000" />
+      <workItem from="1665052725966" duration="181000" />
+      <workItem from="1665052956444" duration="418000" />
     </task>
     <servers />
   </component>
@@ -79,6 +663,18 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
