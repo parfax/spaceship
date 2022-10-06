@@ -9,20 +9,16 @@ public class record : MonoBehaviour {
 
     public Text panelHighTxt;
     public Text panelCurTxt;
-    // Use this for initialization
-    void Start () {
-		
-	}
+    
 	
-	// Update is called once per frame
 	void FixedUpdate () {
-        panelHighTxt.text = "HI " + PlayerPrefs.GetInt("hscore");
+        panelHighTxt.text = "HI " + PlayerPrefs.GetInt("Highest Score");
         panelCurTxt.text = "" + curRec;
 
-        highRec = PlayerPrefs.GetInt("hscore");
+        highRec = PlayerPrefs.GetInt("Highest Score");
         if (curRec > highRec)
         {
-            PlayerPrefs.SetInt("hscore", curRec);
+            PlayerPrefs.SetInt("Highest Score", curRec);
         }
         txtHighRecord.text = "HI " + highRec;
         txtCurRecord.text = curRec + "";

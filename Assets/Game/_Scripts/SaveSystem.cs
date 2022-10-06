@@ -1,25 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class SaveSystem : MonoBehaviour {
     public Text HighScoreTxt;
     public Text HpTxt;
     public Text MoneyTxt;
-    // Use this for initialization
+    
     void Start () {
-        if (!PlayerPrefs.HasKey("hp"))
-        {
-            PlayerPrefs.SetInt("hp", 100);
-        }
+        if (!PlayerPrefs.HasKey("Max Health")) PlayerPrefs.SetInt("Max Health", 100);
+        if (!PlayerPrefs.HasKey("Highest Score")) PlayerPrefs.SetInt("Highest Score", 0);
+        if (!PlayerPrefs.HasKey("Balance")) PlayerPrefs.SetInt("Balance", 539);
+        
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        HighScoreTxt.text = "HI " + PlayerPrefs.GetInt("hscore");
-        HpTxt.text = "HP " + PlayerPrefs.GetInt("hp");
-        MoneyTxt.text = "$" + PlayerPrefs.GetInt("money");
+	private void FixedUpdate () {
+        HighScoreTxt.text = "HI " + PlayerPrefs.GetInt("Highest Score");
+        HpTxt.text = "HP " + PlayerPrefs.GetInt("Max Health");
+        MoneyTxt.text = "$" + PlayerPrefs.GetInt("Balance");
 
     }
 }

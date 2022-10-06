@@ -10,7 +10,7 @@ public class Money : MonoBehaviour {
     public int curMoney;
     // Use this for initialization
     void Start () {
-		curMoney = PlayerPrefs.GetInt("money");
+		curMoney = PlayerPrefs.GetInt("Balance");
     }
 	
 	// Update is called once per frame
@@ -24,8 +24,8 @@ public class Money : MonoBehaviour {
 
 		okMoney = (int) Math.Round(.05f * curRec);
         curMoney += okMoney;
-        MoneyTxt.text = "+$"+okMoney;
-        PlayerPrefs.SetInt("money", curMoney);
+        MoneyTxt.text = "+ $"+okMoney;
+        PlayerPrefs.SetInt("Balance", curMoney);
         GetComponent<Money>().enabled = false;
 	}
 }

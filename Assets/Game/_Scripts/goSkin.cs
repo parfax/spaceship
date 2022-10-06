@@ -13,11 +13,11 @@ public class goSkin : MonoBehaviour
 
     public void goCase()
     {
-        int m = PlayerPrefs.GetInt("money");
+        int m = PlayerPrefs.GetInt("Balance");
         if(m >= 539)
         {
             m -= 539;
-            PlayerPrefs.SetInt("money", m);
+            PlayerPrefs.SetInt("Balance", m);
             SceneManager.LoadScene("cases");
         }
     }

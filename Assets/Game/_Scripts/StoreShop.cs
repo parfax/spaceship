@@ -31,10 +31,10 @@ public class StoreShop : MonoBehaviour {
     {
         if (PlayerPrefs.GetInt("monei") >= 500)
         {
-            int hpPower = PlayerPrefs.GetInt("hp");
+            int hpPower = PlayerPrefs.GetInt("Max Health");
             int moneyy = PlayerPrefs.GetInt("monei");
             hpPower += 5;
-            PlayerPrefs.SetInt("hp", hpPower);
+            PlayerPrefs.SetInt("Max Health", hpPower);
             moneyy -= 500;
             PlayerPrefs.SetInt("monei", moneyy);
         }
