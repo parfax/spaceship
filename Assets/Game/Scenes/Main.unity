@@ -7943,10 +7943,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fc25831c9add646afff5f766b9e659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skins: []
   preview: {fileID: 1521555870}
+  text: {fileID: 2121714766}
   index: 0
   length: 0
+  skinID: 0
 --- !u!1 &677687435
 GameObject:
   m_ObjectHideFlags: 0
@@ -13197,9 +13198,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 674561560}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: backk
+      - m_Target: {fileID: 674561561}
+        m_TargetAssemblyTypeName: SkinSelectorAndSeller, Assembly-CSharp
+        m_MethodName: SelectSkin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20417,9 +20418,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 674561560}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: backk
+      - m_Target: {fileID: 674561561}
+        m_TargetAssemblyTypeName: SkinSelectorAndSeller, Assembly-CSharp
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

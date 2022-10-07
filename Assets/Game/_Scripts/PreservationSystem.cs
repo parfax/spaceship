@@ -12,8 +12,8 @@ namespace Game.Scripts
 
         public GameObject player;
         public GameObject secondGun;
-        private static Sprite[] skins;
-        public static List<Sprite> availableSkins = new List<Sprite>();
+        private static Sprite[] allSkins;
+        public static List<(Sprite, int)> availableSkins = new List<(Sprite, int)>();
         
         private void Start () {
             Camera.main.GetComponent<PostProcessingBehaviour>().enabled = PlayerPrefs.GetInt("PostProcessing") == 0;
@@ -35,7 +35,7 @@ namespace Game.Scripts
             btnAttack2Pos.SetActive(PlayerPrefs.GetInt("btnAttack2Hidden") == 0);
 
             LoadSkins();
-            player.GetComponent<SpriteRenderer>().sprite = skins[PlayerPrefs.GetInt("Selected Skin")];
+            player.GetComponent<SpriteRenderer>().sprite = allSkins[PlayerPrefs.GetInt("Selected Skin")];
             player.GetComponent<SkyTanker>().hp = PlayerPrefs.GetInt("Max Health");
 
             secondGun.SetActive(PlayerPrefs.GetInt("Gun Type") == 1);
@@ -46,14 +46,17 @@ namespace Game.Scripts
             if (!PlayerPrefs.HasKey("Selected Skin")) PlayerPrefs.SetInt("Selected Skin", 0);
             if (!PlayerPrefs.HasKey("skin0")) PlayerPrefs.SetString("skin0", "");
             
-            skins = Resources.LoadAll<Sprite>("Skins");
+            allSkins = Resources.LoadAll<Sprite>("Skins");
         }
 
         public static void GetAvailableSkins()
         {
-            for (int i = 0; i < skins.Length; i++)
+            for (int i = 0; i < allSkins.Length; i++)
             {
-                if (PlayerPrefs.HasKey($"skin{i}")) availableSkins.Add(skins[i]);
+                if (PlayerPrefs.HasKey($"skin{i}"))
+                {
+                    availableSkins.Add((allSkins[i], i));
+                }
             }
         }
     }
