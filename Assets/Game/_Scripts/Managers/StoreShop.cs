@@ -1,12 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StoreShop : MonoBehaviour {
-    public GameObject more,btn1,btn2;
-	// Use this for initialization
-	void Update () {
-        if (PlayerPrefs.GetInt("gun") == 1)
+    public GameObject more, upgrades, btn1,btn2;
+
+
+	private void Awake () {
+        CheckForSecondGun();
+    }
+
+
+
+    private void CheckForSecondGun()
+    {
+        if (PlayerPrefs.GetInt("Gun Type") == 1)
         {
             btn2.SetActive(true);
             btn1.SetActive(false);
@@ -17,35 +23,65 @@ public class StoreShop : MonoBehaviour {
             btn2.SetActive(false);
         }
     }
-    public void buySecondGun()
+
+    public void Upgrades()
     {
-        if (PlayerPrefs.GetInt("monei") >= 8000 && PlayerPrefs.GetInt("gun") == 0)
+        upgrades.SetActive(true);
+        gameObject.SetActive(false);
+    }
+
+    public void BuySecondGun()
+    {
+        if (PlayerPrefs.GetInt("Balance") >= 8000 && PlayerPrefs.GetInt("Gun Type") == 0)
         {
-            int moneyy = PlayerPrefs.GetInt("monei");
-            PlayerPrefs.SetInt("gun", 1);
-            moneyy -= 8000;
-            PlayerPrefs.SetInt("monei", moneyy);
+            var balance = PlayerPrefs.GetInt("Balance");
+            PlayerPrefs.SetInt("Gun Type", 1);
+            balance -= 8000;
+            PlayerPrefs.SetInt("Balance", balance);
+
+            CheckForSecondGun();
         }
     }
-    public void buyPlusHP()
+    public void BuyAdditionalHealthPoints()
     {
-        if (PlayerPrefs.GetInt("monei") >= 500)
+        if (PlayerPrefs.GetInt("Balance") >= 500)
         {
             int hpPower = PlayerPrefs.GetInt("Max Health");
-            int moneyy = PlayerPrefs.GetInt("monei");
+            int balance = PlayerPrefs.GetInt("Balance");
             hpPower += 5;
             PlayerPrefs.SetInt("Max Health", hpPower);
-            moneyy -= 500;
-            PlayerPrefs.SetInt("monei", moneyy);
+            balance -= 500;
+            PlayerPrefs.SetInt("Balance", balance);
         }
     }
-    public void moree()
+    public void BuyAdditionalRounds()
+    {
+        if (PlayerPrefs.GetInt("Balance") >= 500)
+        {
+            var balance = PlayerPrefs.GetInt("Balance");
+            var ammo = PlayerPrefs.GetInt("Ammo");
+
+            PlayerPrefs.SetInt("Ammo", ammo + 200);
+            balance -= 500;
+            PlayerPrefs.SetInt("Balance", balance);
+
+            CheckForSecondGun();
+        }
+    }
+
+
+
+    public void More()
     {
         more.SetActive(true);
         gameObject.SetActive(false);
     }
-    public void Backk()
+    public void Back()
     {
         gameObject.SetActive(false);
+    }
+    public void BackToShop()
+    {
+        upgrades.SetActive(false);
     }
 }

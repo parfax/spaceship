@@ -645,11 +645,6 @@ MonoBehaviour:
   med: {fileID: 1020768710365562, guid: 5c907665691c545478a34365f9aad6cd, type: 3}
   ammoCase: {fileID: 1576467470505412, guid: afb56d894a2eb244ab6cdef2d003d587, type: 3}
   rcrd: {fileID: 1056448478}
-  stone1: {fileID: 5915312402912493883, guid: 26b424b3a8d7ddd4485bb89137b6c053, type: 3}
-  stone2: {fileID: 942404899934936689, guid: a440c565c239a9747b24e0e268ee0862, type: 3}
-  stone3: {fileID: 1272796266611675466, guid: 4def211d2111db143bb2d823f66752cc, type: 3}
-  stone4: {fileID: 4629979893707523358, guid: 5b97c37ba34149b45b9dbdd2ce72845b, type: 3}
-  stone5: {fileID: 3658839812009019454, guid: 373f67eb4e670774c879cac6fa30287d, type: 3}
   isBoss: 0
   e1: {r: 1, g: 1, b: 1, a: 1}
   e2: {r: 0, g: 1, b: 0.5466392, a: 1}
@@ -664,11 +659,18 @@ MonoBehaviour:
   dropTimeEnd: 1000
   dropRandom: 0
   SpawnDropRandom: 0
-  Spawn1: {fileID: 1747435637}
-  Spawn2: {fileID: 107133186}
-  Spawn3: {fileID: 321314459}
-  Spawn4: {fileID: 944154781}
-  Spawn5: {fileID: 779623036}
+  SpawnPoints:
+  - {fileID: 1747435637}
+  - {fileID: 107133186}
+  - {fileID: 321314459}
+  - {fileID: 944154781}
+  - {fileID: 779623036}
+  stones:
+  - {fileID: 5915312402912493883, guid: 26b424b3a8d7ddd4485bb89137b6c053, type: 3}
+  - {fileID: 942404899934936689, guid: a440c565c239a9747b24e0e268ee0862, type: 3}
+  - {fileID: 1272796266611675466, guid: 4def211d2111db143bb2d823f66752cc, type: 3}
+  - {fileID: 4629979893707523358, guid: 5b97c37ba34149b45b9dbdd2ce72845b, type: 3}
+  - {fileID: 3658839812009019454, guid: 373f67eb4e670774c879cac6fa30287d, type: 3}
 --- !u!4 &179563597
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,52 +1012,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 350529833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Highlighted
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 350529836}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1766607881}
-        m_TargetAssemblyTypeName: SkyTanker, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_ControlPath: <Mouse>/leftButton
 --- !u!114 &350529836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1072,7 +1032,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0.44313726, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1418,7 +1378,7 @@ GameObject:
   - component: {fileID: 489016804}
   - component: {fileID: 489016807}
   - component: {fileID: 489016806}
-  - component: {fileID: 489016805}
+  - component: {fileID: 489016808}
   m_Layer: 5
   m_Name: attack1
   m_TagString: Untagged
@@ -1445,61 +1405,6 @@ RectTransform:
   m_AnchoredPosition: {x: 280, y: -160}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &489016805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489016803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Highlighted
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 489016806}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1766607881}
-        m_TargetAssemblyTypeName: SkyTanker, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &489016806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,7 +1421,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0.44313726, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1538,6 +1443,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489016803}
   m_CullTransparentMesh: 0
+--- !u!114 &489016808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489016803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Mouse>/leftButton
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,40 +6993,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 732831846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Highlighted
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 732831849}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  m_ControlPath: <Keyboard>/d
 --- !u!114 &732831849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7125,7 +7013,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0.44313726, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7897,52 +7785,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1033659901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1033659904}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 785323273}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Pausen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_ControlPath: <Keyboard>/escape
 --- !u!114 &1033659904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7959,7 +7805,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8418,6 +8264,104 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168840934}
   m_CullTransparentMesh: 0
+--- !u!1 &1215648244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215648246}
+  - component: {fileID: 1215648245}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1215648245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215648244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 3ec5ab15fa3eba7479245c6cb9884ae0,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 59f42fcf-a525-4776-a573-3b529dc6ac83
+    m_ActionName: PlayerInput/Movement[/Keyboard/a,/Keyboard/d,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1766607888}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: OnFire
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e080e4be-f873-4f0f-b22c-f8d01b877571
+    m_ActionName: PlayerInput/Fire[/Keyboard/space,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 785323273}
+        m_TargetAssemblyTypeName: pause, Assembly-CSharp
+        m_MethodName: PauseClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7a823cb1-0d2c-4650-9e70-039d95c60d01
+    m_ActionName: PlayerInput/Pause[/Keyboard/escape,/Keyboard/p]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: PlayerInput
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!4 &1215648246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215648244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294815440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,40 +8529,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371962122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Highlighted
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1371962125}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
+  m_ControlPath: <Keyboard>/a
 --- !u!114 &1371962125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8635,7 +8549,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0.44313726, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9422,8 +9336,9 @@ GameObject:
   - component: {fileID: 1766607880}
   - component: {fileID: 1766607879}
   - component: {fileID: 1766607884}
-  - component: {fileID: 1766607885}
   - component: {fileID: 1766607886}
+  - component: {fileID: 1766607887}
+  - component: {fileID: 1766607888}
   m_Layer: 0
   m_Name: 2431
   m_TagString: Player
@@ -9493,24 +9408,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3faa60ab13af93e41b34945659b78e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammo: 100
   hp: 100
-  txtAmmo: {fileID: 98645138}
   xx: {x: 7, y: -3}
   yy: {x: -7, y: -3}
   sldr: {fileID: 1304268114}
-  spawn1: {fileID: 1695398559}
-  spawn2: {fileID: 1385570813}
-  firePrefab: {fileID: 1795513117868830, guid: ae61e55bd7f29e740994b300f88bc992, type: 3}
   Gorit: {fileID: 1455665731}
   explosion: {fileID: 1112267262554664, guid: e39397ffd8e4da2449cde47061f49d7f, type: 3}
   gameEnd: {fileID: 722461126}
   isGorit: 0
-  myshot: {fileID: 8300000, guid: 97e4c42841fd2e14fb8c05e6286da8cf, type: 3}
-  b: 0
-  isShooting: 0
-  fireRate: 400
-  attack: {fileID: -3546863579103240139, guid: 3ec5ab15fa3eba7479245c6cb9884ae0, type: 3}
 --- !u!212 &1766607882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9681,37 +9586,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1766607885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766607878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 3ec5ab15fa3eba7479245c6cb9884ae0,
-    type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: PlayerInput
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1766607886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9727,6 +9601,38 @@ MonoBehaviour:
   speed: 10
   movement: {fileID: 1565017545321232967, guid: 3ec5ab15fa3eba7479245c6cb9884ae0,
     type: 3}
+--- !u!114 &1766607887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766607878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94482677b392a164ba5153e6820ca7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: 100
+  txtAmmo: {fileID: 98645138}
+  spawn1: {fileID: 1695398559}
+  spawn2: {fileID: 1385570813}
+  firePrefab: {fileID: 1795513117868830, guid: ae61e55bd7f29e740994b300f88bc992, type: 3}
+  myshot: {fileID: 8300000, guid: 97e4c42841fd2e14fb8c05e6286da8cf, type: 3}
+  fireRate: 0.3
+--- !u!114 &1766607888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766607878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 213c1516424814c4fa772cf9cc36a878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isShooting: 0
 --- !u!1 &1807457693
 GameObject:
   m_ObjectHideFlags: 0

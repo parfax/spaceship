@@ -10,44 +10,56 @@ public class pause : MonoBehaviour
     public GameObject panel;
     public Text txt;
     int a;
-    bool b;
+    bool b, isPaused;
     
 
     // Update is called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
-        if (!b) return;
-        
-        a--;
-        if (a == 180)
-            txt.text = "3";
-        if (a == 120)
-            txt.text = "2";
-        if (a == 60)
-            txt.text = "1";
+        if (b)
+        {
+            a--;
+            if (a == 180)
+                txt.text = "3";
+            if (a == 120)
+                txt.text = "2";
+            if (a == 60)
+                txt.text = "1";
 
-        
-        if (a > 0) return;
-        Time.timeScale = 1f;
-        spawnMngr.enabled = true;
-        record.enabled = true;
-        b = false;
-        txt.gameObject.SetActive(false);
+            if (a <= 0)
+            {
+                Time.timeScale = 1f;
+                spawnMngr.enabled = true;
+                record.enabled = true;
+                b = false;
+                txt.gameObject.SetActive(false);
+            }
+        }
     }
-    public void Pausen()
+
+    public void PauseClicked() { 
+        isPaused = !isPaused;
+
+        if (isPaused) Pause();
+        else Continnue();
+    } 
+
+    private void Pause()
     {
         panel.SetActive(true);
         Time.timeScale = 0f;
         spawnMngr.enabled = false;
         record.enabled = false;
     }
-    public void Continnue()
+    private void Continnue()
     {
+        isPaused = false;
         panel.SetActive(false);
         a = 181;
         txt.gameObject.SetActive(true);
         b = true;
     }
+
     public void reqMain(GameObject panel)
     {
         panel.SetActive(true);

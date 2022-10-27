@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AmmoCase : MonoBehaviour {
-    void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.tag == "Player")
+        if(col.CompareTag("Player"))
         {
-            col.gameObject.GetComponent<SkyTanker>().ammo += 100;
+            col.gameObject.GetComponent<Gun>().ammo += 100;
             Destroy(gameObject);
         }
     }

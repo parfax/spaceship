@@ -5,39 +5,28 @@ public class SpawnMngr : MonoBehaviour
 {
     public AudioMixer astandard;
 
-    public GameObject boss1, boss2, boss3, auStart, boss, aggresive, enemyFire, enem, med, ammoCase, rcrd, stone1, stone2, stone3, stone4, stone5;
+    public GameObject boss1, boss2, boss3, auStart, boss, aggresive, enemyFire, enem, med, ammoCase, rcrd;
     public bool isBoss;
 
     public Color e1, e2, e3, e4;
 
-    public int spawnRandom, TimeStart, TimeEnd,TimeSpeed = 1, TimeRecord, dropTimeStart, dropTimeEnd, dropRandom, SpawnDropRandom;
-    public Transform Spawn1, Spawn2,Spawn3, Spawn4, Spawn5;
+    public int spawnRandom, TimeStart, TimeEnd, TimeSpeed = 1, TimeRecord, dropTimeStart, dropTimeEnd, dropRandom, SpawnDropRandom;
+    public Transform[] SpawnPoints;
+    public GameObject[] stones;
 
     // Use this for initialization
-    void Start () {
-        astandard.SetFloat("volume", 20);
-    }
-	void BonusAmmo()
+    void Start()
     {
-        SpawnDropRandom = Random.Range(1, 4);
-        if (SpawnDropRandom == 1)
-        {
-            Instantiate(ammoCase, Spawn1.transform);
-            SpawnDropRandom = 0;
-        }
-        if (SpawnDropRandom == 2)
-        {
-            Instantiate(ammoCase, Spawn2.transform);
-            SpawnDropRandom = 0;
-        }
-        if (SpawnDropRandom == 4)
-        {
-            Instantiate(ammoCase, Spawn4.transform);
-            SpawnDropRandom = 0;
-        }
+        astandard.SetFloat("volume", 10);
     }
-	// Update is called once per frame
-	void FixedUpdate () {
+    void BonusAmmo()
+    {
+        var r = Random.Range(0, 3);
+        Instantiate(ammoCase, SpawnPoints[r]);
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         if (isBoss)
         {
             TimeStart = 0;
@@ -46,23 +35,23 @@ public class SpawnMngr : MonoBehaviour
             aggresive.SetActive(false);
         }
 
-        if(TimeRecord == 5000)
+        if (TimeRecord == 5000)
         {
             isBoss = true;
             astandard.SetFloat("volume", 0);
-            Instantiate(boss1, Spawn1.transform);
+            Instantiate(boss1, SpawnPoints[2]);
             BonusAmmo();
         }
         if (TimeRecord == 9000)
         {
             isBoss = true;
-            Instantiate(boss2, Spawn1.transform);
+            Instantiate(boss2, SpawnPoints[2]);
             BonusAmmo();
         }
         if (TimeRecord == 12000)
         {
             isBoss = true;
-            Instantiate(boss3, Spawn1.transform);
+            Instantiate(boss3, SpawnPoints[2]);
             BonusAmmo();
         }
 
@@ -74,62 +63,23 @@ public class SpawnMngr : MonoBehaviour
 
         if (dropTimeStart >= dropTimeEnd)
         {
-            dropRandom = Random.Range(1, 3);
-            SpawnDropRandom = Random.Range(1, 4);
-            int r = Random.Range(4, 16);
-            int rr = Random.Range(1, 4);
+            dropRandom = Random.Range(0, 3);
+            int r = Random.Range(0, 10);
+            int rr = Random.Range(0, 3);
 
-            if (r == 11 && rr == 3)
-                Instantiate(stone1, Spawn5.transform);
-            if (r == 11 && rr == 2)
-                Instantiate(stone1, Spawn3.transform);
-            if (r == 11 && rr == 1)
-                Instantiate(stone1, Spawn1.transform);
-            if (r == 12 && rr == 3)
-                Instantiate(stone5, Spawn5.transform);
-            if (r == 12 && rr == 2)
-                Instantiate(stone5, Spawn3.transform);
-            if (r == 12 && rr == 1)
-                Instantiate(stone5, Spawn1.transform);
-            if (r == 13 && rr == 3)
-                Instantiate(stone4, Spawn5.transform);
-            if (r == 13 && rr == 2)
-                Instantiate(stone4, Spawn3.transform);
-            if (r == 13 && rr == 1)
-                Instantiate(stone4, Spawn1.transform);
-            if (r == 14 && rr == 3)
-                Instantiate(stone3, Spawn5.transform);
-            if (r == 14 && rr == 2)
-                Instantiate(stone3, Spawn3.transform);
-            if (r==14&&rr==1)
-                Instantiate(stone3, Spawn1.transform);
-            if(r==15&&rr==3)
-                Instantiate(stone2, Spawn5.transform);
-            if(r==15&&rr==2)
-                Instantiate(stone2, Spawn3.transform);
-            if(r==15&&rr==1)
-                Instantiate(stone2, Spawn1.transform);
+            Instantiate(stones[r], SpawnPoints[rr].transform);
+
             if (dropRandom == 1)
             {
-                if(SpawnDropRandom == 1)
-                    Instantiate(med, Spawn1.transform);
-
-                if (SpawnDropRandom == 2)
-                    Instantiate(med, Spawn2.transform);
-
-                if (SpawnDropRandom == 4)
-                    Instantiate(med, Spawn4.transform);
+                Instantiate(med, SpawnPoints[rr]);
             }
-            if(dropRandom == 2)
+            if (dropRandom == 2)
             {
-                if (SpawnDropRandom == 1)
-                    Instantiate(ammoCase, Spawn1.transform);
-
-                if (SpawnDropRandom == 2)
-                    Instantiate(ammoCase, Spawn2.transform);
-
-                if (SpawnDropRandom == 4)
-                    Instantiate(ammoCase, Spawn4.transform);
+                BonusAmmo();
+            }
+            if (dropRandom == 3)
+            {
+                Instantiate(stones[r], SpawnPoints[rr]);
             }
             SpawnDropRandom = 0;
             dropTimeStart = 0;
@@ -282,7 +232,7 @@ public class SpawnMngr : MonoBehaviour
         if (TimeRecord > 12000)
         {
             enemyFire.GetComponent<Rigidbody2D>().gravityScale = 5f;
-            TimeEnd = 20;
+            TimeEnd = 180;
             Time.timeScale = 4f;
             if (!isBoss)
             {
@@ -296,7 +246,7 @@ public class SpawnMngr : MonoBehaviour
         {
             spawnRandom = Random.Range(1, 6);
             int rr = Random.Range(1, 5);
-            if(rr == 1)
+            if (rr == 1)
                 enem.GetComponent<SpriteRenderer>().color = e1;
             if (rr == 2)
                 enem.GetComponent<SpriteRenderer>().color = e2;
@@ -309,28 +259,28 @@ public class SpawnMngr : MonoBehaviour
 
         if (spawnRandom == 1)
         {
-                Instantiate(enem, Spawn1.transform);
-                spawnRandom = 0;
+            Instantiate(enem, SpawnPoints[0]);
+            spawnRandom = 0;
         }
         if (spawnRandom == 2)
         {
-                Instantiate(enem, Spawn2.transform);
-                spawnRandom = 0;
+            Instantiate(enem, SpawnPoints[1]);
+            spawnRandom = 0;
         }
         if (spawnRandom == 3)
         {
-                Instantiate(enem, Spawn3.transform);
-                spawnRandom = 0;
+            Instantiate(enem, SpawnPoints[2]);
+            spawnRandom = 0;
         }
         if (spawnRandom == 4)
         {
-                Instantiate(enem, Spawn4.transform);
-                spawnRandom = 0;
+            Instantiate(enem, SpawnPoints[3]);
+            spawnRandom = 0;
         }
         if (spawnRandom == 5)
         {
-                Instantiate(enem, Spawn5.transform);
-                spawnRandom = 0;
+            Instantiate(enem, SpawnPoints[4]);
+            spawnRandom = 0;
         }
     }
 }

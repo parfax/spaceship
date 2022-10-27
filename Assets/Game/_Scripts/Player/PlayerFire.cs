@@ -16,19 +16,19 @@ public class PlayerFire : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "enemy" && col.gameObject.GetComponent<boss>())
+        if (col.CompareTag("enemy") && col.gameObject.GetComponent<boss>())
         {
             col.gameObject.GetComponent<boss>().hp -= 50;
             Instantiate(goritEnemy, col.gameObject.transform);
             GetComponent<AudioSource>().PlayOneShot(babax);
         }
-        if (col.tag == "enemy")
+        if (col.CompareTag("enemy"))
         {
             col.gameObject.GetComponent<enemy>().hp -= 50;
             Instantiate(goritEnemy, col.gameObject.transform);
             GetComponent<AudioSource>().PlayOneShot(babax);
         }
-        if (col.tag == "firen")
+        if (col.CompareTag("firen"))
         {
             col.gameObject.GetComponent<stoneHP>().hp -= 50;
             Instantiate(goritEnemy, col.gameObject.transform);

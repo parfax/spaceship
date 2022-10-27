@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
@@ -37,6 +36,9 @@ namespace Game.Scripts
             LoadSkins();
             player.GetComponent<SpriteRenderer>().sprite = allSkins[PlayerPrefs.GetInt("Selected Skin")].sprite;
             player.GetComponent<SkyTanker>().hp = PlayerPrefs.GetInt("Max Health");
+
+            if (!PlayerPrefs.HasKey("Ammo")) PlayerPrefs.SetInt("Ammo", 100);
+            player.GetComponent<Gun>().ammo = PlayerPrefs.GetInt("Ammo");
 
             secondGun.SetActive(PlayerPrefs.GetInt("Gun Type") == 1);
         }
