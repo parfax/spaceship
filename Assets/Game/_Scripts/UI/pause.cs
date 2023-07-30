@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class pause : MonoBehaviour
 {
@@ -37,7 +36,9 @@ public class pause : MonoBehaviour
         }
     }
 
-    public void PauseClicked() { 
+    public void OnPause(InputAction.CallbackContext ctx) {
+        if (!ctx.performed) return;
+
         isPaused = !isPaused;
 
         if (isPaused) Pause();

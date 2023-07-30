@@ -20,14 +20,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "Pause",
-                    "type": "Button",
-                    "id": "7a823cb1-0d2c-4650-9e70-039d95c60d01",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -118,10 +110,26 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
+                }
+            ]
+        },
+        {
+            "name": "Menu",
+            "id": "e39c725c-7ab2-4d54-a44b-ff9c8319d2f7",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "d1648d36-b7a8-40b1-8517-e330bf0054ec",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "7681c06a-2d85-4db0-84d1-bdb75d710bcf",
+                    "id": "458af429-f68e-43b1-8272-8e84c785bf5d",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
@@ -132,7 +140,7 @@
                 },
                 {
                     "name": "",
-                    "id": "b72536e8-04ac-4adc-8fa8-c63440974143",
+                    "id": "fce50fe2-cf7e-4ba7-a7e0-93fcf3a873bd",
                     "path": "<Keyboard>/p",
                     "interactions": "",
                     "processors": "",

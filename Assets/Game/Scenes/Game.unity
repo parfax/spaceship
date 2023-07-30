@@ -8361,8 +8361,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 7a823cb1-0d2c-4650-9e70-039d95c60d01
-    m_ActionName: PlayerInput/Pause[/Keyboard/escape,/Keyboard/p]
+    m_ActionId: d1648d36-b7a8-40b1-8517-e330bf0054ec
+    m_ActionName: Menu/Pause[/Keyboard/escape,/Keyboard/p]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerInput
