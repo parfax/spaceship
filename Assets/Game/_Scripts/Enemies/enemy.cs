@@ -1,36 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class enemy : MonoBehaviour {
-    public int hp = 100;
-    public AudioClip enemShot;
-    public GameObject spawn1;
-    public GameObject spawn2;
-    public GameObject fire;
-    public GameObject explosion;
-    public float TimeStart;
-    public float TimeEnd;
-    public float TimeSpeed = 1f;
-    // Use this for initialization
+    public int health = 100;
+
+    [SerializeField] private GameObject spawn1, spawn2, firePrefab, explosionPrefab;
+
+    private float TimeStart;
+    [SerializeField] private float TimeEnd, TimeSpeed = 1f;
+
+    [SerializeField] private AudioClip enemShot;
+    private AudioSource audioSource;
+
     void Start () {
-		
-	}
-    // Update is called once per frame
+        audioSource = GetComponent<AudioSource>();
+
+    }
+
     void FixedUpdate () {
         TimeStart += TimeSpeed;
         if (TimeStart >= TimeEnd)
         {
-            Instantiate(fire, spawn1.transform);
-            Instantiate(fire, spawn2.transform);
-            GetComponent<AudioSource>().PlayOneShot(enemShot);
+            GameObject fire1 = Instantiate(firePrefab);
+            fire1.transform.position = spawn1.transform.position;
+
+            GameObject fire2 = Instantiate(firePrefab);
+            fire2.transform.position =  spawn2.transform.position;
+
+            audioSource.PlayOneShot(enemShot);
             TimeStart = 0;
         }
-        if(hp <= 0)
+        if(health <= 0)
         {
-            hp = 0;
+            health = 0;
+            GameObject explosion = Instantiate(explosionPrefab);
             explosion.transform.position = transform.position;
-            Instantiate(explosion);
             Destroy(gameObject);
         }
     }

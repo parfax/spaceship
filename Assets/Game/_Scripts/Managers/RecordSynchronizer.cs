@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class record : MonoBehaviour {
+public class RecordSynchronizer : MonoBehaviour {
     public int highRec;
     public int curRec;
     public Text txtHighRecord;

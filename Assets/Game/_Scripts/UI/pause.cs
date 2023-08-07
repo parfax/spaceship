@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class pause : MonoBehaviour
 {
     public SpawnMngr spawnMngr;
-    public record record;
+    public RecordSynchronizer record;
     public GameObject panel;
     public Text txt;
     int a;

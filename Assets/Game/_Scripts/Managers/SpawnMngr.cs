@@ -3,16 +3,16 @@ using UnityEngine.Audio;
 
 public class SpawnMngr : MonoBehaviour
 {
-    public AudioMixer astandard;
+    [SerializeField] private AudioMixer astandard;
 
-    public GameObject boss1, boss2, boss3, auStart, boss, aggresive, enemyFire, enem, med, ammoCase, rcrd;
+    [SerializeField] private GameObject boss1, boss2, boss3, auStart, boss, aggresive, enemyFire, enem, med, ammoCase, rcrd;
     public bool isBoss;
 
-    public Color e1, e2, e3, e4;
+    [SerializeField] private Color e1, e2, e3, e4;
 
     public int spawnRandom, TimeStart, TimeEnd, TimeSpeed = 1, TimeRecord, dropTimeStart, dropTimeEnd, dropRandom, SpawnDropRandom;
-    public Transform[] SpawnPoints;
-    public GameObject[] stones;
+    [SerializeField] private Transform[] SpawnPoints;
+    [SerializeField] private GameObject[] stonePrefabs;
 
     // Use this for initialization
     void Start()
@@ -57,7 +57,7 @@ public class SpawnMngr : MonoBehaviour
 
 
 
-        rcrd.GetComponent<record>().curRec = TimeRecord;
+        rcrd.GetComponent<RecordSynchronizer>().curRec = TimeRecord;
         TimeRecord += TimeSpeed;
         dropTimeStart += TimeSpeed;
 
@@ -67,7 +67,7 @@ public class SpawnMngr : MonoBehaviour
             int r = Random.Range(0, 10);
             int rr = Random.Range(0, 3);
 
-            Instantiate(stones[r], SpawnPoints[rr].transform);
+            Instantiate(stonePrefabs[r], SpawnPoints[rr].transform);
 
             if (dropRandom == 1)
             {
@@ -79,7 +79,7 @@ public class SpawnMngr : MonoBehaviour
             }
             if (dropRandom == 3)
             {
-                Instantiate(stones[r], SpawnPoints[rr]);
+                Instantiate(stonePrefabs[r], SpawnPoints[rr]);
             }
             SpawnDropRandom = 0;
             dropTimeStart = 0;

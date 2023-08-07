@@ -24,7 +24,7 @@ public class PlayerFire : MonoBehaviour {
         }
         if (col.CompareTag("enemy"))
         {
-            col.gameObject.GetComponent<enemy>().hp -= 50;
+            col.gameObject.GetComponent<enemy>().health -= 50;
             Instantiate(goritEnemy, col.gameObject.transform);
             GetComponent<AudioSource>().PlayOneShot(babax);
         }

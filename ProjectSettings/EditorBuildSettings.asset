@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Content/DarkPage Intro/welcome.unity
     guid: c71e970ecd0318e4fa7e2d0deccf7c1e
   - enabled: 1
