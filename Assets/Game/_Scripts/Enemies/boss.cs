@@ -1,40 +1,62 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class boss : MonoBehaviour
 {
-    public float speed;
     private Transform target;
-    public Vector2 yy;
-    public Vector2 yy1;
+    [SerializeField] private float speed;
+    [SerializeField] private Vector2 yy;
+    [SerializeField] private Vector2 yy1;
 
     public int hp;
     public Text hptxt;
-    public AudioClip enemShot;
-    public GameObject spawn1;
-    public GameObject spawn2;
-    public GameObject spawn3;
-    public GameObject spawn4;
-    public GameObject fire;
-    public GameObject explosion;
-    public float TimeStart;
-    public float TimeEnd;
-    public float TimeSpeed = 1f;
+    [SerializeField] private AudioClip enemShot;
+
+    [SerializeField] private Slider healthSlider;
+
+    [SerializeField] private GameObject spawn1, spawn2, spawn3, spawn4;
+    [SerializeField] private GameObject fire, explosion;
+
+    private float TimeStart;
+    [SerializeField] private float TimeEnd, TimeSpeed = 1f;
+
     // Use this for initialization
     void Start()
     {
+        healthSlider.maxValue = hp;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        Move();
+        HandleHealth();
+        Shoot();        
+    }
+
+    private void HandleHealth()
+    {
+        healthSlider.value = hp;
+
+        if (hp <= 0)
+        {
+            hp = 0;
+            GameObject.FindGameObjectWithTag("spwnMngr").GetComponent<SpawnMngr>().isBoss = false;
+            explosion.transform.position = transform.position;
+            Instantiate(explosion);
+            Destroy(gameObject);
+        }
+    }
+
+    private void Move()
+    {
         yy = new Vector2(target.position.x, yy1.y);
         transform.position = Vector2.MoveTowards(transform.position, yy, speed * Time.deltaTime);
-        
-        hptxt.text = hp + " hp";
+    }
+
+    private void Shoot()
+    {
         TimeStart += TimeSpeed;
         if (TimeStart >= TimeEnd)
         {
@@ -44,14 +66,6 @@ public class boss : MonoBehaviour
             Instantiate(fire, spawn4.transform);
             GetComponent<AudioSource>().PlayOneShot(enemShot);
             TimeStart = 0;
-        }
-        if (hp <= 0)
-        {
-            hp = 0;
-            GameObject.FindGameObjectWithTag("spwnMngr").GetComponent<SpawnMngr>().isBoss = false;
-            explosion.transform.position = transform.position;
-            Instantiate(explosion);
-            Destroy(gameObject);
         }
     }
 }

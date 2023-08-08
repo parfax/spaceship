@@ -1,21 +1,19 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PostProcessing;
 
 namespace Game.Scripts
 {
     public class PreservationSystem : MonoBehaviour { // Make static class
-        public GameObject btnLeftPos,
+        [SerializeField] private GameObject btnLeftPos,
             btnRightPos, btnAttack1Pos,
             btnAttack2Pos;
 
-        public GameObject player;
-        public GameObject secondGun;
+        [SerializeField] private GameObject player, secondGun;
         private static SkinData[] allSkins;
         private static List<(SkinData, int)> availableSkins;
         
         private void Start () {
-            Camera.main.GetComponent<PostProcessingBehaviour>().enabled = PlayerPrefs.GetInt("PostProcessing") == 0;
+            // Camera.main.GetComponent<PostProcessingBehaviour>().enabled = PlayerPrefs.GetInt("PostProcessing") == 0;
             Vector2 ll, rr, aa1, aa2;
             ll.x = PlayerPrefs.GetFloat("btnLeftPosX");
             ll.y = PlayerPrefs.GetFloat("btnLeftPosY");

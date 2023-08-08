@@ -2,16 +2,14 @@
 using UnityEngine.UI;
 
 public class RecordSynchronizer : MonoBehaviour {
-    public int highRec;
-    public int curRec;
-    public Text txtHighRecord;
-    public Text txtCurRecord;
 
-    public Text panelHighTxt;
-    public Text panelCurTxt;
+    private int highRec;
+    [HideInInspector] public int curRec;
+
+    [SerializeField] private Text txtHighRecord,txtCurRecord, panelHighTxt, panelCurTxt;
     
 	
-	void FixedUpdate () {
+	private void FixedUpdate () {
         panelHighTxt.text = "HI " + PlayerPrefs.GetInt("Highest Score");
         panelCurTxt.text = "" + curRec;
 

@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 
 public class gameOver : MonoBehaviour {
-    public float TimeDieStart, TimeDieEnd, TimeDieSpeed = 1f;
-    public GameObject spwnmang, retryPanel, recPanel;
+    private float TimeDieStart;
+    [SerializeField] private float TimeDieEnd, TimeDieSpeed = 1f;
+    [SerializeField] private GameObject spwnmang, retryPanel, recPanel;
 
     // Update is called once per frame
-    void FixedUpdate () {
+    private void FixedUpdate () {
         spwnmang.SetActive(false);
         TimeDieStart += TimeDieSpeed;
         

@@ -54,6 +54,17 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "",
+                    "id": "02e56d16-5176-465c-883f-946bd54202a9",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "X Axis",
                     "id": "ea910dfa-32cf-4e56-bb91-cf2432e3f1a0",
                     "path": "1DAxis",
@@ -120,6 +131,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Gamepad",
+                    "id": "63b71ebc-2835-4d92-8be6-1e19c3215a38",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c66fc95a-7d9b-4a1e-8da5-c52f0a57b2c9",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "78d3325c-fd9f-4133-87c9-1ffbe3b316e0",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "af354f0f-ef7e-49ce-bed2-e09a23109892",
                     "path": "<Keyboard>/escape",
@@ -134,6 +178,17 @@
                     "name": "",
                     "id": "028c0c60-6150-4b16-a5e1-da594c33206f",
                     "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fd866190-948d-43b7-a2ec-2eeba9af9f74",
+                    "path": "<Gamepad>/select",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
